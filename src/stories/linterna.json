@@ -1,0 +1,79 @@
+{
+  "title": {
+    "es": "La Linterna de las Estrellas",
+    "en": "The Lantern of Stars",
+    "de": "Die Sternenlaterne",
+    "fr": "La Lanterne des Étoiles"
+  },
+  "chapters": [
+    {
+      "id": 0,
+      "text": {
+        "es": "Una linterna mágica te permite ver constelaciones ocultas en el cielo.",
+        "en": "A magic lantern lets you see hidden constellations in the sky.",
+        "de": "Eine magische Laterne lässt dich verborgene Sternbilder am Himmel sehen.",
+        "fr": "Une lanterne magique te permet de voir des constellations cachées dans le ciel."
+      },
+      "options": [
+        { "text": { "es": "Seguir la constelación del dragón", "en": "Follow the dragon constellation", "de": "Der Drachenkonstellation folgen", "fr": "Suivre la constellation du dragon" }, "next": 1 },
+        { "text": { "es": "Seguir la constelación del búho", "en": "Follow the owl constellation", "de": "Der Eulenkonstellation folgen", "fr": "Suivre la constellation du hibou" }, "next": 2 }
+      ]
+    },
+    {
+      "id": 1,
+      "text": {
+        "es": "El dragón guía tu camino hacia una montaña brillante.",
+        "en": "The dragon guides your way to a shining mountain.",
+        "de": "Der Drache führt dich zu einem leuchtenden Berg.",
+        "fr": "Le dragon guide ton chemin vers une montagne brillante."
+      },
+      "options": [
+        { "text": { "es": "Continuar", "en": "Continue", "de": "Weiter", "fr": "Continuer" }, "next": 3, "addItem": "estrella_dragon" }
+      ]
+    },
+    {
+      "id": 2,
+      "text": {
+        "es": "El búho enseña sabiduría sobre los sueños.",
+        "en": "The owl teaches wisdom about dreams.",
+        "de": "Die Eule lehrt Weisheit über Träume.",
+        "fr": "Le hibou enseigne la sagesse sur les rêves."
+      },
+      "options": [
+        { "text": { "es": "Continuar", "en": "Continue", "de": "Weiter", "fr": "Continuer" }, "next": 3, "addItem": "pluma_buho" }
+      ]
+    },
+    {
+      "id": 3,
+      "text": {
+        "es": "Minijuego: Conecta estrellas para formar la constelación correcta.",
+        "en": "Minigame: Connect stars to form the correct constellation.",
+        "de": "Minispiel: Verbinde Sterne, um das richtige Sternbild zu bilden.",
+        "fr": "Mini-jeu : Relie les étoiles pour former la bonne constellation."
+      },
+      "type": "puzzle",
+      "next": [4, 5]
+    },
+    {
+      "id": 4,
+      "text": {
+        "es": "Final dragón: Te conviertes en guardián de las estrellas.",
+        "en": "Dragon ending: You become the guardian of the stars.",
+        "de": "Drachen-Ende: Du wirst zum Wächter der Sterne.",
+        "fr": "Fin dragon : Tu deviens le gardien des étoiles."
+      },
+      "condition": { "requires": "estrella_dragon" }
+    },
+    {
+      "id": 5,
+      "text": {
+        "es": "Final búho: Aprendes a entrar en los sueños de otros.",
+        "en": "Owl ending: You learn to enter the dreams of others.",
+        "de": "Eulen-Ende: Du lernst, in die Träume anderer einzutreten.",
+        "fr": "Fin hibou : Tu apprends à entrer dans les rêves des autres."
+      },
+      "condition": { "requires": "pluma_buho" }
+    }
+  ],
+  "inventory": []
+}

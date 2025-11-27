@@ -1,0 +1,79 @@
+{
+  "title": {
+    "es": "El Reloj del Tiempo",
+    "en": "The Clock of Time",
+    "de": "Die Uhr der Zeit",
+    "fr": "L'Horloge du Temps"
+  },
+  "chapters": [
+    {
+      "id": 0,
+      "text": {
+        "es": "En un mercado antiguo recibes un reloj que puede detener el tiempo.",
+        "en": "In an old market, you receive a clock that can stop time.",
+        "de": "Auf einem alten Markt erhältst du eine Uhr, die die Zeit anhalten kann.",
+        "fr": "Dans un vieux marché, tu reçois une horloge qui peut arrêter le temps."
+      },
+      "options": [
+        { "text": { "es": "Usar el reloj para ayudar a un anciano", "en": "Use the clock to help an old man", "de": "Die Uhr benutzen, um einem alten Mann zu helfen", "fr": "Utiliser l'horloge pour aider un vieil homme" }, "next": 1 },
+        { "text": { "es": "Explorar un castillo abandonado", "en": "Explore an abandoned castle", "de": "Ein verlassenes Schloss erkunden", "fr": "Explorer un château abandonné" }, "next": 2 }
+      ]
+    },
+    {
+      "id": 1,
+      "text": {
+        "es": "El anciano revela que es un guardián del tiempo.",
+        "en": "The old man reveals he is a guardian of time.",
+        "de": "Der alte Mann enthüllt, dass er ein Wächter der Zeit ist.",
+        "fr": "Le vieil homme révèle qu'il est un gardien du temps."
+      },
+      "options": [
+        { "text": { "es": "Continuar", "en": "Continue", "de": "Weiter", "fr": "Continuer" }, "next": 3, "addItem": "engranaje_sagrado" }
+      ]
+    },
+    {
+      "id": 2,
+      "text": {
+        "es": "En el castillo los cuadros cobran vida y cuentan historias.",
+        "en": "In the castle, the paintings come to life and tell stories.",
+        "de": "Im Schloss werden die Gemälde lebendig und erzählen Geschichten.",
+        "fr": "Dans le château, les tableaux prennent vie et racontent des histoires."
+      },
+      "options": [
+        { "text": { "es": "Continuar", "en": "Continue", "de": "Weiter", "fr": "Continuer" }, "next": 3, "addItem": "llave_del_castillo" }
+      ]
+    },
+    {
+      "id": 3,
+      "text": {
+        "es": "Minijuego: Puzzle de engranajes para reparar el reloj.",
+        "en": "Minigame: Gear puzzle to repair the clock.",
+        "de": "Minispiel: Zahnrätsel, um die Uhr zu reparieren.",
+        "fr": "Mini-jeu : Puzzle d'engrenages pour réparer l'horloge."
+      },
+      "type": "puzzle",
+      "next": [4, 5]
+    },
+    {
+      "id": 4,
+      "text": {
+        "es": "Final anciano: Te conviertes en aprendiz del guardián del tiempo.",
+        "en": "Old man ending: You become the apprentice of the guardian of time.",
+        "de": "Ende alter Mann: Du wirst Lehrling des Wächters der Zeit.",
+        "fr": "Fin vieil homme : Tu deviens l'apprenti du gardien du temps."
+      },
+      "condition": { "requires": "engranaje_sagrado" }
+    },
+    {
+      "id": 5,
+      "text": {
+        "es": "Final castillo: Descubres un pasaje secreto hacia otra época.",
+        "en": "Castle ending: You discover a secret passage to another era.",
+        "de": "Schloss-Ende: Du entdeckst einen Geheimgang in eine andere Epoche.",
+        "fr": "Fin château : Tu découvres un passage secret vers une autre époque."
+      },
+      "condition": { "requires": "llave_del_castillo" }
+    }
+  ],
+  "inventory": []
+}

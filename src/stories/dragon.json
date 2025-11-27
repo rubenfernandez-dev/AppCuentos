@@ -1,0 +1,84 @@
+{
+  "title": {
+    "es": "El Dragón del Lago de Berna",
+    "en": "The Dragon of Lake Berna",
+    "de": "Der Drache vom Bernersee",
+    "fr": "Le Dragon du Lac de Berne"
+  },
+  "chapters": [
+    {
+      "id": 0,
+      "text": {
+        "es": "Encuentras un mapa misterioso con dos caminos.",
+        "en": "You find a mysterious map with two paths.",
+        "de": "Du findest eine geheimnisvolle Karte mit zwei Wegen.",
+        "fr": "Tu trouves une carte mystérieuse avec deux chemins."
+      },
+      "image": "mapa.png",
+      "options": [
+        { "text": { "es": "Ir al lago", "en": "Go to the lake", "de": "Zum See gehen", "fr": "Aller au lac" }, "next": 1 },
+        { "text": { "es": "Ir a la montaña", "en": "Go to the mountain", "de": "Zum Berg gehen", "fr": "Aller à la montagne" }, "next": 2 }
+      ]
+    },
+    {
+      "id": 1,
+      "text": {
+        "es": "El dragón amistoso te entrega una llave mágica.",
+        "en": "The friendly dragon gives you a magic key.",
+        "de": "Der freundliche Drache gibt dir einen magischen Schlüssel.",
+        "fr": "Le dragon amical te remet une clé magique."
+      },
+      "image": "dragon.png",
+      "options": [
+        { "text": { "es": "Continuar", "en": "Continue", "de": "Weiter", "fr": "Continuer" }, "next": 3, "addItem": "llave_magica" }
+      ]
+    },
+    {
+      "id": 2,
+      "text": {
+        "es": "El sabio te entrega una piedra rúnica.",
+        "en": "The wise man gives you a rune stone.",
+        "de": "Der Weise gibt dir einen Runenstein.",
+        "fr": "Le sage te donne une pierre runique."
+      },
+      "image": "sabio.png",
+      "options": [
+        { "text": { "es": "Continuar", "en": "Continue", "de": "Weiter", "fr": "Continuer" }, "next": 3, "addItem": "piedra_runica" }
+      ]
+    },
+    {
+      "id": 3,
+      "text": {
+        "es": "Llegas a una puerta secreta. ¿Qué quieres hacer?",
+        "en": "You arrive at a secret door. What do you want to do?",
+        "de": "Du kommst zu einer geheimen Tür. Was möchtest du tun?",
+        "fr": "Tu arrives à une porte secrète. Que veux-tu faire?"
+      },
+      "image": "puerta.png",
+      "options": [
+        { "text": { "es": "Usar llave mágica", "en": "Use magic key", "de": "Magischen Schlüssel benutzen", "fr": "Utiliser la clé magique" }, "next": 4 },
+        { "text": { "es": "Usar piedra rúnica", "en": "Use rune stone", "de": "Runenstein benutzen", "fr": "Utiliser la pierre runique" }, "next": 5 }
+      ]
+    },
+    {
+      "id": 4,
+      "text": {
+        "es": "Final del lago: Te conviertes en Guardián del Lago.",
+        "en": "Lake ending: You become the Guardian of the Lake.",
+        "de": "See-Ende: Du wirst zum Wächter des Sees.",
+        "fr": "Fin du lac : Tu deviens le Gardien du Lac."
+      },
+      "image": "final_lago.png"
+    },
+    {
+      "id": 5,
+      "text": {
+        "es": "Final de la montaña: Te conviertes en Explorador de la Montaña.",
+        "en": "Mountain ending: You become the Mountain Explorer.",
+        "de": "Berg-Ende: Du wirst zum Bergforscher.",
+        "fr": "Fin de la montagne : Tu deviens l'Explorateur de la Montagne."
+      },
+      "image": "final_montana.png"
+    }
+  ]
+}

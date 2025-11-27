@@ -1,0 +1,79 @@
+{
+  "title": {
+    "es": "La Brújula Encantada",
+    "en": "The Enchanted Compass",
+    "de": "Der Verzauberte Kompass",
+    "fr": "La Boussole Enchantée"
+  },
+  "chapters": [
+    {
+      "id": 0,
+      "text": {
+        "es": "Encuentras una brújula misteriosa que apunta hacia lo desconocido.",
+        "en": "You find a mysterious compass pointing to the unknown.",
+        "de": "Du findest einen geheimnisvollen Kompass, der ins Unbekannte zeigt.",
+        "fr": "Tu trouves une boussole mystérieuse qui pointe vers l'inconnu."
+      },
+      "options": [
+        { "text": { "es": "Seguir hacia el bosque", "en": "Go to the forest", "de": "In den Wald gehen", "fr": "Aller vers la forêt" }, "next": 1 },
+        { "text": { "es": "Seguir hacia el río", "en": "Go to the river", "de": "Zum Fluss gehen", "fr": "Aller vers la rivière" }, "next": 2 }
+      ]
+    },
+    {
+      "id": 1,
+      "text": {
+        "es": "En el bosque aparece un zorro que habla y te guía.",
+        "en": "In the forest, a talking fox appears and guides you.",
+        "de": "Im Wald erscheint ein sprechender Fuchs und führt dich.",
+        "fr": "Dans la forêt, un renard parlant apparaît et te guide."
+      },
+      "options": [
+        { "text": { "es": "Continuar", "en": "Continue", "de": "Weiter", "fr": "Continuer" }, "next": 3, "addItem": "pluma_magica" }
+      ]
+    },
+    {
+      "id": 2,
+      "text": {
+        "es": "En el río un pez dorado te ofrece un acertijo.",
+        "en": "In the river, a golden fish offers you a riddle.",
+        "de": "Im Fluss bietet dir ein goldener Fisch ein Rätsel an.",
+        "fr": "Dans la rivière, un poisson doré te propose une énigme."
+      },
+      "options": [
+        { "text": { "es": "Continuar", "en": "Continue", "de": "Weiter", "fr": "Continuer" }, "next": 3, "addItem": "escama_dorada" }
+      ]
+    },
+    {
+      "id": 3,
+      "text": {
+        "es": "Minijuego: Ordena símbolos mágicos para activar la brújula.",
+        "en": "Minigame: Arrange magic symbols to activate the compass.",
+        "de": "Minispiel: Ordne magische Symbole, um den Kompass zu aktivieren.",
+        "fr": "Mini-jeu : Arrange les symboles magiques pour activer la boussole."
+      },
+      "type": "puzzle",
+      "next": [4, 5]
+    },
+    {
+      "id": 4,
+      "text": {
+        "es": "Final bosque: Te conviertes en explorador de mundos ocultos.",
+        "en": "Forest ending: You become an explorer of hidden worlds.",
+        "de": "Wald-Ende: Du wirst zum Entdecker verborgener Welten.",
+        "fr": "Fin forêt : Tu deviens explorateur de mondes cachés."
+      },
+      "condition": { "requires": "pluma_magica" }
+    },
+    {
+      "id": 5,
+      "text": {
+        "es": "Final río: El pez dorado revela un secreto sobre el futuro.",
+        "en": "River ending: The golden fish reveals a secret about the future.",
+        "de": "Fluss-Ende: Der goldene Fisch verrät ein Geheimnis über die Zukunft.",
+        "fr": "Fin rivière : Le poisson doré révèle un secret sur l'avenir."
+      },
+      "condition": { "requires": "escama_dorada" }
+    }
+  ],
+  "inventory": []
+}
