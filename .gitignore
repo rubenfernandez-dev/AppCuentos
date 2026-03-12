@@ -25,3 +25,8 @@ android/
 # iOS build
 ios/
 Pods/
+
+# BFG / backup artifacts
+AppCuentos.git/
+AppCuentos.git.bfg-report/
+bfg-*.jar
