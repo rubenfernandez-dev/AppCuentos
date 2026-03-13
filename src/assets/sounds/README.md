@@ -1,3 +1,11 @@
-# Sonidos
+# sounds
 
-En esta carpeta se guardarán los sonidos del cuento.
+Audio files and effects.
+
+Current usage:
+- Played through src/utils/soundPlayer.js.
+- Triggered by StoryScreen narrative events.
+
+Pending:
+- Align event keys with the sound map.
+- Add fallback behavior for missing files.
